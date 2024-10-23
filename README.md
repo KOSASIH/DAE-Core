@@ -22,6 +22,9 @@
 ![CSA STAR](https://img.shields.io/badge/CSA%20STAR-Compliant-brightgreen.svg)
 ![FedRAMP Compliant](https://img.shields.io/badge/FedRAMP-Compliant-brightgreen.svg)
 
+![Fintech Foundation Certificate (FFC )](https://img.shields.io/badge/Fintech%20Foundation%20Certificate%20(FFC)-certified-brightgreen.svg)
+![Focus on Fintech Digital Badge](https://img.shields.io/badge/Focus%20on%20Fintech%20Digital%20Badge-certified-brightgreen.svg)
+![PHAP Digital Badge](https://img.shields.io/badge/PHAP%20Digital%20Badge-certified-brightgreen.svg)
 
 # DAE-Core
 DAE-Core is the foundational framework for building a Decentralized Autonomous Economy (DAE) that empowers users through smart contracts, decentralized identity verification, and tokenized incentive mechanisms. This project aims to create a self-sustaining ecosystem where participants can engage in peer-to-peer transactions, contribute to governance, and access a wide range of decentralized applications (dApps). By leveraging advanced technologies and promoting interoperability, DAE-Core seeks to enhance the utility of the Pi cryptocurrency while fostering a vibrant and collaborative community.
