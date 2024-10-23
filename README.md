@@ -1,17 +1,26 @@
-# DAE-Core
-
 ![Code Coverage](https://codecov.io/gh/yourusername/DAE-Core/branch/main/graph/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Issues](https://img.shields.io/github/issues/yourusername/DAE-Core)
 ![Pull Requests](https://img.shields.io/github/issues-pr/yourusername/DAE-Core)
 
-## International Organizations Certifications
-
 ![ISO 9001](https://img.shields.io/badge/ISO%209001-certified-brightgreen.svg)
 ![ISO 27001](https://img.shields.io/badge/ISO%2027001-certified-brightgreen.svg)
 ![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-brightgreen.svg)
 ![W3C Compliant](https://img.shields.io/badge/W3C-Compliant-brightgreen.svg)
+![ISO 9001](https://img.shields.io/badge/ISO%209001-certified-brightgreen.svg)
+![ISO 27001](https://img.shields.io/badge/ISO%2027001-certified-brightgreen.svg)
+![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-brightgreen.svg)
+![W3C Compliant](https://img.shields.io/badge/W3C-Compliant-brightgreen.svg)
+![SOC 2 Compliant](https://img.shields.io/badge/SOC%202-Compliant-brightgreen.svg)
+![HIPAA Compliant](https://img.shields.io/badge/HIPAA-Compliant-brightgreen.svg)
+![PCI-DSS Compliant](https://img.shields.io/badge/PCI--DSS-Compliant-brightgreen.svg)
+![ISO 20000](https://img.shields.io/badge/ISO%2020000-certified-brightgreen.svg)
+![ISO 22301](https://img.shields.io/badge/ISO%2022301-certified-brightgreen.svg)
+![ISO 27701](https://img.shields.io/badge/ISO%2027701-certified-brightgreen.svg)
+![NIST Cybersecurity Framework](https://img.shields.io/badge/NIST%20Cybersecurity%20Framework-Compliant-brightgreen.svg)
+![CSA STAR](https://img.shields.io/badge/CSA%20STAR-Compliant-brightgreen.svg)
+![FedRAMP Compliant](https://img.shields.io/badge/FedRAMP-Compliant-brightgreen.svg)
 
 
 # DAE-Core
