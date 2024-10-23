@@ -26,6 +26,12 @@
 ![Focus on Fintech Digital Badge](https://img.shields.io/badge/Focus%20on%20Fintech%20Digital%20Badge-certified-brightgreen.svg)
 ![PHAP Digital Badge](https://img.shields.io/badge/PHAP%20Digital%20Badge-certified-brightgreen.svg)
 
+![Global Blockchain Leader (GBL)](https://img.shields.io/badge/Global%20Blockchain%20Leader%20(GBL)-certified-brightgreen.svg)
+![Blockchain Council Certified Professional (BCCP)](https://img.shields.io/badge/Blockchain%20Council%20Certified%20Professional%20(BCCP)-certified-brightgreen.svg)
+![Certified Blockchain Developer (CBD)](https://img.shields.io/badge/Certified%20Blockchain%20Developer%20(CBD)-certified-brightgreen.svg)
+![Blockchain for Business Professional (BBP)](https://img.shields.io/badge/Blockchain%20for%20Business%20Professional%20(BBP)-certified-brightgreen.svg)
+![Certified Blockchain Solution Architect (CBSA)](https://img.shields.io/badge/Certified%20Blockchain%20Solution%20Architect%20(CBSA)-certified-brightgreen.svg)
+
 # DAE-Core
 DAE-Core is the foundational framework for building a Decentralized Autonomous Economy (DAE) that empowers users through smart contracts, decentralized identity verification, and tokenized incentive mechanisms. This project aims to create a self-sustaining ecosystem where participants can engage in peer-to-peer transactions, contribute to governance, and access a wide range of decentralized applications (dApps). By leveraging advanced technologies and promoting interoperability, DAE-Core seeks to enhance the utility of the Pi cryptocurrency while fostering a vibrant and collaborative community.
 
