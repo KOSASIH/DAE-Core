@@ -31,6 +31,11 @@
 ![Certified Blockchain Developer (CBD)](https://img.shields.io/badge/Certified%20Blockchain%20Developer%20(CBD)-certified-brightgreen.svg)
 ![Blockchain for Business Professional (BBP)](https://img.shields.io/badge/Blockchain%20for%20Business%20Professional%20(BBP)-certified-brightgreen.svg)
 ![Certified Blockchain Solution Architect (CBSA)](https://img.shields.io/badge/Certified%20Blockchain%20Solution%20Architect%20(CBSA)-certified-brightgreen.svg)
+![Certified Ethereum Developer (CED)](https://img.shields.io/badge/Certified%20Ethereum%20Developer%20(CED)-certified-brightgreen.svg)
+![Certified Hyperledger Developer (CHD)](https://img.shields.io/badge/Certified%20Hyperledger%20Developer%20(CHD)-certified-brightgreen.svg)
+![Certified Blockchain Expert (CBE)](https://img.shields.io/badge/Certified%20Blockchain%20Expert%20(CBE)-certified-brightgreen.svg)
+![Blockchain Business Analyst (BBA)](https://img.shields.io/badge/Blockchain%20Business%20Analyst%20(BBA)-certified-brightgreen.svg)
+![Certified Blockchain Security Professional (CBSP)](https://img.shields.io/badge/Certified%20Blockchain%20Security%20Professional%20(CBSP)-certified-brightgreen.svg)
 
 # DAE-Core
 DAE-Core is the foundational framework for building a Decentralized Autonomous Economy (DAE) that empowers users through smart contracts, decentralized identity verification, and tokenized incentive mechanisms. This project aims to create a self-sustaining ecosystem where participants can engage in peer-to-peer transactions, contribute to governance, and access a wide range of decentralized applications (dApps). By leveraging advanced technologies and promoting interoperability, DAE-Core seeks to enhance the utility of the Pi cryptocurrency while fostering a vibrant and collaborative community.
