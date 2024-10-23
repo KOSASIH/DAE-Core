@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Real-Time Data Dashboard</h1>
+    <canvas id="dataChart" width="400" height="200"></canvas>
+    <script>
+        const ctx = document.getElementById('dataChart').getContext('2d');
+        const dataChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Data Points',
+                    data: [],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const socket = io();
+
+        socket.on('dataUpdate', (newDataPoint) => {
+            const currentTime = new Date().toLocaleTimeString();
+            dataChart.data.labels.push(currentTime);
+            dataChart.data.datasets[0].data.push(newDataPoint);
+            dataChart.update();
+        });
+    </script>
+</body>
+</html>
