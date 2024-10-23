@@ -1,4 +1,20 @@
 # DAE-Core
+
+![Code Coverage](https://codecov.io/gh/yourusername/DAE-Core/branch/main/graph/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Issues](https://img.shields.io/github/issues/yourusername/DAE-Core)
+![Pull Requests](https://img.shields.io/github/issues-pr/yourusername/DAE-Core)
+
+## International Organizations Certifications
+
+![ISO 9001](https://img.shields.io/badge/ISO%209001-certified-brightgreen.svg)
+![ISO 27001](https://img.shields.io/badge/ISO%2027001-certified-brightgreen.svg)
+![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-brightgreen.svg)
+![W3C Compliant](https://img.shields.io/badge/W3C-Compliant-brightgreen.svg)
+
+
+# DAE-Core
 DAE-Core is the foundational framework for building a Decentralized Autonomous Economy (DAE) that empowers users through smart contracts, decentralized identity verification, and tokenized incentive mechanisms. This project aims to create a self-sustaining ecosystem where participants can engage in peer-to-peer transactions, contribute to governance, and access a wide range of decentralized applications (dApps). By leveraging advanced technologies and promoting interoperability, DAE-Core seeks to enhance the utility of the Pi cryptocurrency while fostering a vibrant and collaborative community.
 
 # DAE-Core
