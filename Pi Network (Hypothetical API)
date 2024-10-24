@@ -1,0 +1,42 @@
+const axios = require('axios');
+const { ethers } = require('ethers');
+require('dotenv').config();
+
+// Ethereum provider setup
+const ethereumProvider = new ethers.providers.JsonRpcProvider(process.env.ETHEREUM_RPC_URL);
+const ethereumBridgeAddress = '0xYourEthereumBridgeContractAddress';
+const ethereumBridgeABI = [
+    "function releaseTokens(address user) external"
+];
+
+// Setup Pi Network API (hypothetical)
+const piApiUrl = "https://api.pi-network.example/lock-tokens";
+const piApiKey = process.env.PI_API_KEY;
+
+// Ethereum contract interaction
+const ethereumBridgeContract = new ethers.Contract(ethereumBridgeAddress, ethereumBridgeABI, ethereumProvider);
+
+// Function to check locked tokens on Pi Network and transfer to Ethereum
+async function transferTokensFromPiToEthereum(user, piTokens, ethAddress) {
+    // Hypothetical API request to lock tokens on Pi Network
+    const piResponse = await axios.post(piApiUrl, {
+        user: user,
+        amount: piTokens,
+        apiKey: piApiKey
+    });
+
+    if (piResponse.data.success) {
+        console.log(`Tokens locked on Pi Network for user ${user}`);
+
+        // Now release tokens on Ethereum side
+        const signer = ethereumProvider.getSigner();  // Assume this signer is the relayer
+        const tx = await ethereumBridgeContract.connect(signer).releaseTokens(ethAddress);
+
+        console.log("Tokens released on Ethereum:", tx.hash);
+    } else {
+        console.log("Failed to lock tokens on Pi Network");
+    }
+}
+
+// Example use case
+transferTokensFromPiToEthereum('piUser123', 1000, '0xUserEthereumAddress');
