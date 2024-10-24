@@ -3,6 +3,11 @@
 [![Blockchain Security Auditor](https://img.shields.io/badge/Blockchain%20Security%20Auditor-FF3D00?style=flat-square&logo=lock&logoColor=white)](https://www.certifiedblockchainsecurity.com/)
 [![DApp Developer](https://img.shields.io/badge/DApp%20Developer-4CAF50?style=flat-square&logo=appveyor&logoColor=white)](https://www.blockchain-council.org/certifications/certified-dapp-developer/)
 [![Blockchain Project Manager](https://img.shields.io/badge/Blockchain%20Project%20Manager-2196F3?style=flat-square&logo=project-diagram&logoColor=white)](https://www.blockchain-council.org/certifications/blockchain-project-manager/)
+[![Certified Blockchain Expert](https://img.shields.io/badge/Certified%20Blockchain%20Expert-0077B5?style=flat-square&logo=blockchain&logoColor=white)](https://www.blockchain-council.org/certifications/certified-blockchain-expert/)
+[![Certified Blockchain Developer](https://img.shields.io/badge/Certified%20Blockchain%20Developer-FFB800?style=flat-square&logo=code-branch&logoColor=white)](https://www.blockchain-council.org/certifications/certified-blockchain-developer/)
+[![Certified Ethereum Developer](https://img.shields.io/badge/Certified%20Ethereum%20Developer-4CAF50?style=flat-square&logo=ethereum&logoColor=white)](https://www.blockchain-council.org/certifications/certified-ethereum-developer/)
+[![Certified Hyperledger Developer](https://img.shields.io/badge/Certified%20Hyperledger%20Developer-FF3D00?style=flat-square&logo=linux&logoColor=white)](https://www.hyperledger.org/learn/certification)
+[![Certified Blockchain Security Professional](https://img.shields.io/badge/Certified%20Blockchain%20Security%20Professional-2196F3?style=flat-square&logo=shield-alt&logoColor=white)](https://www.blockchain-council.org/certifications/certified-blockchain-security-professional/)
 
 [![Chartered Financial Analyst (CFA)](https://img.shields.io/badge/Chartered%20Financial%20Analyst%20(CFA)-0077B5?style=flat-square&logo=chart-line&logoColor=white)](https://www.cfainstitute.org/en/programs/cfa)
 [![Certified Financial Planner (CFP)](https://img.shields.io/badge/Certified%20Financial%20Planner%20(CFP)-FFB800?style=flat-square&logo=money-check-alt&logoColor=white)](https://www.cfp.net/)
