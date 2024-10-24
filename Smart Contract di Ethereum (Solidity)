@@ -1,0 +1,39 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract EthereumBridge {
+    address public owner;
+    mapping(address => uint256) public lockedTokens;
+
+    event TokensLocked(address indexed user, uint256 amount, string polkadotAddress);
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    // Function to lock tokens on Ethereum for transfer to Polkadot
+    function lockTokens(uint256 amount, string memory polkadotAddress) public {
+        require(amount > 0, "Amount must be greater than 0");
+        require(lockedTokens[msg.sender] == 0, "Already locked tokens");
+
+        // Lock tokens on Ethereum (assumed to be done through transfer to this contract)
+        lockedTokens[msg.sender] = amount;
+
+        // Emit event to notify relayer to transfer on Polkadot side
+        emit TokensLocked(msg.sender, amount, polkadotAddress);
+    }
+
+    // Function to release tokens on Ethereum when tokens are returned from Polkadot
+    function releaseTokens(address user) external {
+        require(msg.sender == owner, "Only owner can release tokens");
+        require(lockedTokens[user] > 0, "No tokens to release");
+
+        // Release tokens to user
+        uint256 amount = lockedTokens[user];
+        lockedTokens[user] = 0;
+
+        // Transfer tokens back to user
+        // (Transfer logic for your ERC20 or native token goes here)
+        // For example: token.transfer(user, amount);
+    }
+}
