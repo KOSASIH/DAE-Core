@@ -4,6 +4,12 @@
 [![DApp Developer](https://img.shields.io/badge/DApp%20Developer-4CAF50?style=flat-square&logo=appveyor&logoColor=white)](https://www.blockchain-council.org/certifications/certified-dapp-developer/)
 [![Blockchain Project Manager](https://img.shields.io/badge/Blockchain%20Project%20Manager-2196F3?style=flat-square&logo=project-diagram&logoColor=white)](https://www.blockchain-council.org/certifications/blockchain-project-manager/)
 
+[![Chartered Financial Analyst (CFA)](https://img.shields.io/badge/Chartered%20Financial%20Analyst%20(CFA)-0077B5?style=flat-square&logo=chart-line&logoColor=white)](https://www.cfainstitute.org/en/programs/cfa)
+[![Certified Financial Planner (CFP)](https://img.shields.io/badge/Certified%20Financial%20Planner%20(CFP)-FFB800?style=flat-square&logo=money-check-alt&logoColor=white)](https://www.cfp.net/)
+[![Financial Risk Manager (FRM)](https://img.shields.io/badge/Financial%20Risk%20Manager%20(FRM)-4CAF50?style=flat-square&logo=shield-alt&logoColor=white)](https://www.garp.org/frm)
+[![Certified Management Accountant (CMA)](https://img.shields.io/badge/Certified%20Management%20Accountant%20(CMA)-FF3D00?style=flat-square&logo=calculator&logoColor=white)](https://www.imanet.org/cma-certification)
+[![Chartered Institute of Management Accountants (CIMA)](https://img.shields.io/badge/Chartered%20Institute%20of%20Management%20Accountants%20(CIMA)-2196F3?style=flat-square&logo=briefcase&logoColor=white)](https://www.cimaglobal.com/)
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/DAE-Core">Decentralized Autonomous Economy ( DAE ) </a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
 # DAE-Core
