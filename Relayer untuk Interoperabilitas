@@ -1,0 +1,33 @@
+const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
+const { ethers } = require('ethers');
+require('dotenv').config();
+
+// Ethereum provider setup
+const ethereumProvider = new ethers.providers.JsonRpcProvider(process.env.ETHEREUM_RPC_URL);
+const ethereumBridgeAddress = '0xYourEthereumBridgeContractAddress';
+const ethereumBridgeABI = [
+    "event TokensLocked(address indexed user, uint256 amount, string polkadotAddress)"
+];
+
+// Polkadot provider setup
+const polkadotProvider = new WsProvider('wss://polkadot.api.onfinality.io/public-ws');
+const polkadotApi = await ApiPromise.create({ provider: polkadotProvider });
+const keyring = new Keyring({ type: 'sr25519' });
+const polkadotAccount = keyring.addFromUri(process.env.POLKADOT_PRIVATE_KEY);
+
+// Listen for TokensLocked event on Ethereum
+const ethereumBridgeContract = new ethers.Contract(ethereumBridgeAddress, ethereumBridgeABI, ethereumProvider);
+
+ethereumBridgeContract.on('TokensLocked', async (user, amount, polkadotAddress) => {
+    console.log(`Tokens Locked on Ethereum: User ${user}, Amount ${amount}, Polkadot Address ${polkadotAddress}`);
+    
+    // Transfer tokens on Polkadot side
+    const transfer = polkadotApi.tx.balances.transfer(polkadotAddress, amount);
+    
+    const { success, included } = await transfer.signAndSend(polkadotAccount);
+    if (success) {
+        console.log(`Tokens transferred on Polkadot to ${polkadotAddress}`);
+    } else {
+        console.log("Transfer failed");
+    }
+});
