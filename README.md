@@ -20,6 +20,12 @@
 [![Financial Modeling & Valuation Analyst (FMVA)](https://img.shields.io/badge/Financial%20Modeling%20%26%20Valuation%20Analyst%20(FMVA)-FF3D00?style=flat-square&logo=chart-line&logoColor=white)](https://corporatefinanceinstitute.com/certifications/fmva/)
 [![Certified Fraud Examiner (CFE)](https://img.shields.io/badge/Certified%20Fraud%20Examiner%20(CFE)-2196F3?style=flat-square&logo=search&logoColor=white)](https://www.acfe.com/cfe-credential.aspx)
 
+[![Project Management Professional (PMP)](https://img.shields.io/badge/Project%20Management%20Professional%20(PMP)-0072B1?style=flat-square&logo=project-diagram&logoColor=white)](https://www.pmi.org/certifications/project-management-pmp)
+[![Certified Information Systems Security Professional (CISSP)](https://img.shields.io/badge/Certified%20Information%20Systems%20Security%20Professional%20(CISSP)-FFB800?style=flat-square&logo=lock&logoColor=white)](https://www.isc2.org/certifications/cissp)
+[![AWS Certified Solutions Architect](https://img.shields.io/badge/AWS%20Certified%20Solutions%20Architect-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+[![Certified Data Professional (CDP)](https://img.shields.io/badge/Certified%20Data%20Professional%20(CDP)-4CAF50?style=flat-square&logo=database&logoColor=white)](https://www.dama.org/certification/certified-data-professional)
+[![Six Sigma Green Belt](https://img.shields.io/badge/Six%20Sigma%20Green%20Belt-2196F3?style=flat-square&logo=check-circle&logoColor=white)](https://www.asq.org/cert/six-sigma-green-belt)
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/DAE-Core">Decentralized Autonomous Economy ( DAE ) </a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
 # DAE-Core
