@@ -1,0 +1,10 @@
+Penjelasan Mekanisme:
+
+1. Ethereum: Pengguna mengunci token melalui kontrak pintar di Ethereum. Kontrak ini kemudian memicu event TokensLocked, yang di-listen oleh relayer.
+
+
+2. Relayer: Relayer mendeteksi event tersebut, dan kemudian menggunakan Polkadot API untuk mentransfer token ke alamat Polkadot yang telah disediakan.
+
+
+3. Polkadot: Sebuah fungsi pallet di Polkadot akan menangani transfer token dari bridge ke pengguna akhir.
+4.
