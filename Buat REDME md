@@ -1,0 +1,131 @@
+import hashlib
+import time
+import random
+import qiskit
+
+# Penerapan Algoritma Kuantum untuk QRNG (Quantum Random Number Generator)
+def quantum_random_number():
+    # Menggunakan IBM Qiskit untuk menghasilkan nomor acak kuantum
+    from qiskit import QuantumCircuit, Aer, execute
+
+    # Membuat quantum circuit dengan 1 qubit
+    qc = QuantumCircuit(1, 1)
+    qc.h(0)  # Menggunakan gerbang Hadamard untuk superposisi
+    qc.measure(0, 0)  # Mengukur qubit
+
+    # Menggunakan simulator
+    simulator = Aer.get_backend('qasm_simulator')
+    job = execute(qc, simulator, shots=1)
+    result = job.result()
+    counts = result.get_counts()
+
+    # Mengembalikan hasil acak (0 atau 1)
+    return int(list(counts.keys())[0])
+
+class QuantumBlock:
+    def __init__(self, index, previous_hash, timestamp, data, quantum_proof, stake):
+        self.index = index
+        self.previous_hash = previous_hash
+        self.timestamp = timestamp
+        self.data = data
+        self.quantum_proof = quantum_proof  # Penggunaan nomor acak kuantum untuk proof
+        self.stake = stake  # Proof of Stake
+        self.hash = self.hash_block()
+
+    def hash_block(self):
+        block_string = (str(self.index) + str(self.previous_hash) + 
+                        str(self.timestamp) + str(self.data) + 
+                        str(self.quantum_proof) + str(self.stake))
+        return hashlib.sha256(block_string.encode()).hexdigest()
+
+class QuantumBlockchain:
+    def __init__(self):
+        self.chain = [self.create_genesis_block()]
+        self.stakes = {}  # Menyimpan data staking
+
+    def create_genesis_block(self):
+        return QuantumBlock(0, "0", time.time(), "Genesis Block", quantum_random_number(), 0)
+
+    def get_last_block(self):
+        return self.chain[-1]
+
+    def add_block(self, data, stake):
+        last_block = self.get_last_block()
+        new_block = QuantumBlock(len(self.chain), last_block.hash, time.time(), data, quantum_random_number(), stake)
+        self.chain.append(new_block)
+        print(f"Blok #{new_block.index} telah ditambahkan.")
+        print(f"Hash: {new_block.hash}")
+
+    def is_chain_valid(self):
+        for i in range(1, len(self.chain)):
+            current_block = self.chain[i]
+            previous_block = self.chain[i-1]
+            
+            # Memeriksa integritas hash
+            if current_block.hash != current_block.hash_block():
+                return False
+            if current_block.previous_hash != previous_block.hash:
+                return False
+        return True
+
+    def add_stake(self, address, amount):
+        if address in self.stakes:
+            self.stakes[address] += amount
+        else:
+            self.stakes[address] = amount
+
+    def get_stake(self, address):
+        return self.stakes.get(address, 0)
+
+    def select_validator(self):
+        # Memilih validator berdasarkan stake (semakin besar stake, semakin besar peluang)
+        total_stake = sum(self.stakes.values())
+        if total_stake == 0:
+            return None
+
+        rand = random.uniform(0, total_stake)
+        cumulative = 0
+        for address, stake in self.stakes.items():
+            cumulative += stake
+            if cumulative >= rand:
+                return address
+
+# Fungsi enkripsi dan dekripsi sederhana dengan AES (Quantum-Safe Encryption)
+from Crypto.Cipher import AES
+import os
+
+def generate_key():
+    return os.urandom(32)  # Menghasilkan kunci 256-bit
+
+def encrypt_data(key, data):
+    cipher = AES.new(key, AES.MODE_GCM)
+    ciphertext, tag = cipher.encrypt_and_digest(data.encode('utf-8'))
+    return cipher.nonce, ciphertext, tag
+
+def decrypt_data(key, nonce, ciphertext, tag):
+    cipher = AES.new(key, AES.MODE_GCM, nonce=nonce)
+    data = cipher.decrypt_and_verify(ciphertext, tag)
+    return data.decode('utf-8')
+
+# Membuat Blockchain dan menambahkan blok dengan staking
+quantum_blockchain = QuantumBlockchain()
+
+# Menambahkan stake dari validator
+quantum_blockchain.add_stake("Validator1", 50)
+quantum_blockchain.add_stake("Validator2", 30)
+
+# Memilih validator berdasarkan stake
+validator = quantum_blockchain.select_validator()
+print(f"Validator yang dipilih: {validator}")
+
+# Validator menambahkan blok baru
+quantum_blockchain.add_block("Data Transaksi 1", quantum_blockchain.get_stake(validator))
+
+# Memverifikasi integritas blockchain
+print(f"Blockchain valid: {quantum_blockchain.is_chain_valid()}")
+
+# Contoh enkripsi dan dekripsi data transaksi
+key = generate_key()
+nonce, ciphertext, tag = encrypt_data(key, "Data sensitif")
+print(f"Ciphertext terenkripsi: {ciphertext}")
+print(f"Data terdekripsi: {decrypt_data(key, nonce, ciphertext, tag)}")

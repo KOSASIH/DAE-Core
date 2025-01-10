@@ -1,0 +1,8 @@
+Token Locking pada Pi Network: Anda akan membutuhkan kontrak atau API pada Pi Network yang mengunci token di sisi Pi Network.
+
+
+2. Relayer untuk Pi Network: Harus ada relayer atau gateway yang bisa mendeteksi event pada Pi Network (seperti API polling) dan mengirim data ke jaringan lain, seperti Ethereum.
+
+
+3. Protokol Cross-Chain: Harus ada metode standar yang memungkinkan pengguna melakukan transaksi lintas jaringan, baik itu melalui oracle atau protokol bridge.
+4.
